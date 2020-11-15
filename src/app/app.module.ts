@@ -1,21 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { APP_INITIALIZER, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { initL10n, l10nConfig } from './l10n-config';
-import {
-  L10nLoader,
-  LocalizationModule,
-  LocaleSeoModule,
-  LocaleValidationModule,
-} from 'angular-l10n';
 
 import { HttpClientModule } from '@angular/common/http';
 
-import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
-import { loggerConfig } from './logger-config';
+import { HeaderModule } from './common/header/header.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -25,13 +18,10 @@ import { loggerConfig } from './logger-config';
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    LocalizationModule.forRoot(l10nConfig),
-    LocaleSeoModule.forRoot(),
-    LocaleValidationModule.forRoot(),
-    LoggerModule.forRoot(loggerConfig)
+    SharedModule,
+    HeaderModule
   ],
   providers: [
-    {provide: APP_INITIALIZER, useFactory: initL10n, deps: [L10nLoader], multi: true},
   ],
   bootstrap: [AppComponent]
 })

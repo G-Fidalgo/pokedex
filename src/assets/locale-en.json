@@ -1,4 +1,7 @@
-{
+{   
+    "header": {
+        "title": "HELLO DOLLA"
+    },
     "app": {
         "title": "Angular localization",
         "subtitle": "It's a small world",
