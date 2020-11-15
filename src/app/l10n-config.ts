@@ -32,11 +32,11 @@ export const  l10nConfig: L10nConfig = {
         defaultRouting: false,
         schema: [
             {
-                text: 'United Kingdom',
+                text: 'UK',
                 languageCode: 'en', countryCode: 'GB', numberingSystem: 'latn', currency: 'GBP', timezone: 'Europe/London'
             },
             {
-                text: 'España',
+                text: 'ES',
                 languageCode: 'es', countryCode: 'ES', numberingSystem: 'latn', currency: 'EUR', timezone: 'Europe/Rome'
             }
         ]

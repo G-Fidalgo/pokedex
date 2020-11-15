@@ -55,13 +55,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-AppModule-305953842794d66d2b0deaa85626c7db"' : 'data-target="#xs-components-links-module-AppModule-305953842794d66d2b0deaa85626c7db"' }>
+                                            'data-target="#components-links-module-AppModule-0471ed2352e4fc77a504e82a63b03c7b"' : 'data-target="#xs-components-links-module-AppModule-0471ed2352e4fc77a504e82a63b03c7b"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-305953842794d66d2b0deaa85626c7db"' :
-                                            'id="xs-components-links-module-AppModule-305953842794d66d2b0deaa85626c7db"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-AppModule-0471ed2352e4fc77a504e82a63b03c7b"' :
+                                            'id="xs-components-links-module-AppModule-0471ed2352e4fc77a504e82a63b03c7b"' }>
                                             <li class="link">
                                                 <a href="components/AppComponent.html"
                                                     data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
@@ -71,6 +71,27 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             </li>
                             <li class="link">
                                 <a href="modules/AppRoutingModule.html" data-type="entity-link">AppRoutingModule</a>
+                            </li>
+                            <li class="link">
+                                <a href="modules/HeaderModule.html" data-type="entity-link">HeaderModule</a>
+                                    <li class="chapter inner">
+                                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
+                                            'data-target="#components-links-module-HeaderModule-b778350d9fd10843c62d3969b9d91ac1"' : 'data-target="#xs-components-links-module-HeaderModule-b778350d9fd10843c62d3969b9d91ac1"' }>
+                                            <span class="icon ion-md-cog"></span>
+                                            <span>Components</span>
+                                            <span class="icon ion-ios-arrow-down"></span>
+                                        </div>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-HeaderModule-b778350d9fd10843c62d3969b9d91ac1"' :
+                                            'id="xs-components-links-module-HeaderModule-b778350d9fd10843c62d3969b9d91ac1"' }>
+                                            <li class="link">
+                                                <a href="components/HeaderComponent.html"
+                                                    data-type="entity-link" data-context="sub-entity" data-context-id="modules">HeaderComponent</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </li>
+                            <li class="link">
+                                <a href="modules/SharedModule.html" data-type="entity-link">SharedModule</a>
                             </li>
                 </ul>
                 </li>

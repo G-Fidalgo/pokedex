@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "reset.css";
+:root {
+    --blue: #6EA4BB;
+    --white: #E7E7E6;
+    --black: #464646;
+    --red: #C04C4B;
+    --yellow: #F0DBA5;
+    --min-width: 320px;
+    --xs-width: 480px;
+    --sm-width: 768px;
+    --m-width: 992px;
+    --l-width: 1200px;
+  };
+
+.wrapper{
+    max-width: var(--m-width);
+    margin: 0 auto;
+}
