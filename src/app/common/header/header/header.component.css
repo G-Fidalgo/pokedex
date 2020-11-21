@@ -1,11 +1,19 @@
 header{
     background-color: var(--red);
 }
+
 .header{
     display: flex;
     justify-content: space-between;
     padding: 15px 25px;
 }
+
+.wrapper{
+    padding: 15px 25px;
+    max-width: var(--m-width);
+    margin: 0 auto;
+}
+
 
 .logo{
     display: flex;

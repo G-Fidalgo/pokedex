@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { HeaderModule } from './common/header/header.module';
 import { SharedModule } from './shared/shared.module';
+import { FooterModule } from './common/footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    HeaderModule
+    HeaderModule,
+    FooterModule
   ],
   providers: [
   ],
