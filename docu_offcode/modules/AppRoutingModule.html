@@ -72,8 +72,19 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
 import { Routes, RouterModule } from &#x27;@angular/router&#x27;;
+import { PokemonDetailComponent } from &#x27;./main/pokemon-detail/pokemon-detail.component&#x27;;
+import { PokemonListComponent } from &#x27;./main/pokemon-list/pokemon-list.component&#x27;;
 
-const routes: Routes &#x3D; [];
+const routes: Routes &#x3D; [
+  {
+    path: &quot;&quot;,
+    component: PokemonListComponent
+  },
+  {
+    path: &quot;detail/:pokemon&quot;,
+    component: PokemonDetailComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
