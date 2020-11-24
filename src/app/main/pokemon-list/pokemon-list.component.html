@@ -1,0 +1,37 @@
+<table>
+  <tr>
+    <th class="image"></th>
+      <th l10nTranslate> table.name</th>
+      <th l10nTranslate> table.type</th>
+      <th l10nTranslate> table.ability</th>
+      <th l10nTranslate> table.weight</th>
+  </tr>
+  <tr *ngFor="let pokemon of pokemonList">
+      <td><img src="{{pokemon.sprites.front_default}}" alt="pokemonIcon" title="{{pokemon.name}}"></td>
+      <td>{{pokemon.name}}</td>
+      <td><span *ngFor="let type of pokemon.types">{{type.type.name}}</span></td>
+      <td>{{selectPokemonAbilities(pokemon.abilities)}}</td>
+      <td>{{pokemon.weight}}</td>
+  </tr>
+</table>
+
+<!-- Crear un botón
+    Le pone el evento click 
+    Llama a una función => Reseta la tabla es decir pokemon list = []
+    Modifica el position y suma 25 
+
+    Otro botón para restarle 25 un if de si position es igual a 0 no lo muestre 
+      Cambiar estilo con ngClass 
+
+    Y vuelve a hacer petición al get Data 
+
+-->
+
+<!-- Cada TR de la línea 9 
+    Añadir un click que te llame a una función que es de router 
+    Que el router lo tengo que declarar en el componente y  le pasas el nombre del pokemon 
+
+    Y mirar la animación
+
+    
+-->

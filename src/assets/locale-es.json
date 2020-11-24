@@ -7,5 +7,12 @@
         "cv": "CV",
         "follow": "Sígueme en ....",
         "top": "Back to top"
+    },
+    "table":{
+        "name": "Nombre",
+        "type": "Tipo",
+        "weight": "Peso",
+        "ability": "Habilidad"
     }
+
 }

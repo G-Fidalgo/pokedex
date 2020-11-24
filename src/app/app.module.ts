@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderModule } from './common/header/header.module';
 import { SharedModule } from './shared/shared.module';
 import { FooterModule } from './common/footer/footer.module';
+import { MainModule } from './main/main.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterModule } from './common/footer/footer.module';
     AppRoutingModule,
     SharedModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    MainModule
   ],
   providers: [
   ],
